@@ -11,7 +11,7 @@ curl -H 'Authorization: Bearer TOKEN' https://psp01-dev.agcom.it/api/v1/ticket/g
 curl -H 'Authorization: Bearer TOKEN' https://psp01-dev.agcom.it/api/v1/ticket/item/set/processed -H 'Content-Type: application/json' -d '{"value":"10.1.2.4"}'
 
 # UNPROCESS
-curl -H 'Authorization: Bearer TOKEN' https://psp01-dev.agcom.it/api/v1/ticket/item/set/unprocessed -H 'Content-Type: application/json' -d '{"ticket_item_value":"366cfb4338f341eca9c49864c7356125","reason": "ALREADY_BLOCKED"}'
+curl -H 'Authorization: Bearer TOKEN' https://psp01-dev.agcom.it/api/v1/ticket/item/set/unprocessed -H 'Content-Type: application/json' -d '{"value":"10.1.2.4","reason": "ALREADY_BLOCKED"}'
 
 # GET TICKET
 curl -H 'Authorization: Bearer TOKEN' https://psp01-dev.agcom.it/api/v1/ping -H 'Content-Type: application/json' https://psp01-dev.agcom.it/api/v1/ticket/item/get/all -H 'Content-Type: application/json' -d '{"ticket_id":"366cfb4338f341eca9c49864c7356125"520c25652dc2441c9b41593dda326eea"}'
